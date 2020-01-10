@@ -1,0 +1,36 @@
+{
+  "name": "cdset",
+  "version": "0.0.1",
+  "description": "Helper function to clone and set a nested property of objects or arrays",
+  "keywords": [
+    "immutable",
+    "clone",
+    "deep",
+    "nested",
+    "property",
+    "utility",
+    "helper"
+  ],
+  "source": "src/index.js",
+  "repository": "github:ashsearle/cdset",
+  "author": "Ash Searle <ash@hexmen.com> (https://hexmen.com/)",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cdset.js",
+  "module": "dist/cdset.mjs",
+  "unpkg": "dist/cdset.umd.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "microbundle": "^0.11.0"
+  }
+}
