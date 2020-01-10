@@ -14,7 +14,8 @@ $ npm install --save cdset
 ```js
 const cdset = require("./dist/cdset");
 
-// Example 1: illustrates intermediate objects are automatically created as required to set deeply-nested property,
+// Example 1: illustrates intermediate objects are automatically created as
+// required to set deeply-nested property,
 const foo = { a: 1, b: 2 };
 console.log(cdset(foo, "d.e.f", "hello"));
 // => { a: 1, b: 2, d: { e: { f: "hello" } } }
@@ -34,8 +35,7 @@ console.log(bar)
 // => { foo: 123, bar: [4, 5, 6], baz: {} }
 
 
-// Example 3: illustrates mix of intermediate objects/arrays created as required,
-// and shows (one way) to update multiple properties by nesting calls to cdset:
+// Example 3: updating multiple properties by nesting calls to cdset:
 const qux = {};
 console.log(cdset(cdset(qux, "a.0.b.0", 1), "a.0.b.1", 2));
 // => { a: [ { b: [1, 2] } ] }
