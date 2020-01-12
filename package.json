@@ -1,7 +1,7 @@
 {
   "name": "cdset",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Helper function to clone and set a nested property of objects or arrays",
   "keywords": [
     "immutable",
