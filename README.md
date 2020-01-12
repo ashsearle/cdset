@@ -12,7 +12,7 @@ $ npm install --save cdset
 ## Usage
 
 ```js
-const cdset = require("./dist/cdset");
+const cdset = require("cdset");
 
 // Example 1: illustrates intermediate objects are automatically created as
 // required to set deeply-nested property,
