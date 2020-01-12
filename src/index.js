@@ -9,7 +9,7 @@ const cdset = (oldState, path, value) => {
   const key = path[0];
 
   if (oldState == null) {
-    const looksLikeArrayIndex = String(key) === String(~~key);
+    const looksLikeArrayIndex = String(key) === String(key >>> 0);
     oldState = looksLikeArrayIndex ? [] : {};
   }
 

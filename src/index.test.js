@@ -15,6 +15,7 @@ test("sets deeply-nested property", () => {
 test("create object/array required to set deeply-nested property", () => {
   expect(cdset({}, "p.a", 3)).toEqual({ p: { a: 3 } });
   expect(cdset({}, "p.0", 3)).toEqual({ p: [3] });
+  expect(cdset({}, "p.-1", 3)).toEqual({ p: { "-1": 3 } });
 });
 
 test("preserves extra properties on cloned array", () => {
